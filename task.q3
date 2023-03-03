@@ -1,0 +1,44 @@
+Print odd numbers in an array____________________?
+
+oddNumbers = (array) => {
+ for(var i = 0 ; i< array.length ; i++){
+   if(array[i]%2!=0){
+     console.log(array[i])
+    } 
+       }
+}
+
+Convert all the strings to title caps in a string array_______________?
+
+function titleCase(str) {
+  return str.toLowerCase().replace(/\b\w/g, s => s.toUpperCase());
+}
+
+console.log(titleCase('iron man'));
+console.log(titleCase('iNcrEdible hulK'));
+
+
+Sum of all numbers in an array________________________?
+
+sum = (a, b) => {
+  return(a+b)
+}
+  x= sum(34,87)
+  console.log(x)
+  
+Return all the prime numbers in an array___________________?
+
+  const newArray = [1, 3, 2, 5, 10];
+const myPrimeArray = newArray.filter(num => {
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) return false;
+  }
+  return num !== 1;
+});
+console.log(myPrimeArray);
+
+ Return all the palindromes in an array_____________________?
+ 
+const getAllPalindromes = (words) => words.filter((word) => word.split("").reverse().join("") === word);
+
+console.log(getAllPalindromes(["hello", "noon"]));
